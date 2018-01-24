@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.androidbootcamp.theater.Theater3">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="THEATERS"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="379dp"
+        android:layout_height="338dp"
+        android:layout_marginTop="115dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/theater1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+            android:text="REGAL CINEMAS"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/theater2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:text="AMC CINEMAS"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/theater3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.21"
+            android:text="CINEMARK 20"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/theater4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.22"
+            android:text="HARKINS THEATRES"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onMapSearch"
+            android:text="Search" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="450dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1">
+
+        <Button
+            android:id="@+id/newrelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/newrelease" />
+
+        <Button
+            android:id="@+id/theater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ticket" />
+
+        <Button
+            android:id="@+id/film"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/film" />
+
+        <Button
+            android:id="@+id/mglass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mglass" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="525dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="New Releases"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.16"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:text="Tickets"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.07"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:text="Movies"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:text="Contact Us"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="148dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nearest Theater" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

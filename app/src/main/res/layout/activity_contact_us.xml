@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.androidbootcamp.theater.ContactUs">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="CONTACT US"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="379dp"
+        android:layout_height="338dp"
+        android:layout_marginTop="115dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12"
+            android:text="Phone: 123-456-7890"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12"
+            android:text="Fax: 123-456-7890"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.71"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onMapSearch"
+            android:text="Search" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="450dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1">
+
+        <Button
+            android:id="@+id/Facebook"
+            android:layout_width="93dp"
+            android:layout_height="match_parent"
+            android:onClick="facebook"
+            android:background="@drawable/facebooks" />
+
+        <Button
+            android:id="@+id/Instagram"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:onClick="instagram"
+            android:background="@drawable/instagram" />
+
+        <Button
+            android:id="@+id/Twitter"
+            android:layout_width="92dp"
+            android:layout_height="match_parent"
+            android:onClick="twitter"
+            android:background="@drawable/twitter" />
+
+        <Button
+            android:id="@+id/Googleplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="googleplus"
+            android:background="@drawable/googleplus" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="525dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="196dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:hint="Nearest Theater" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
